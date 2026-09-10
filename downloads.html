@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Downloads</title>
+</head>
+<body class="downloads-body">
+  <nav class="site-nav" aria-label="Seitennavigation">
+    <a href="index.html">Startseite</a>
+    <a href="downloads.html" aria-current="page">Downloads</a>
+  </nav>
+
+  <main class="page-card">
+    <h1 class="page-title">Downloads</h1>
+    <p class="intro">
+      Von mir zur Verfügung gestellte Downloads. Funktionalität noch rudimentär da WIP.
+    </p>
+    <p id="current-folder">Aktueller Ordner: downloads/</p>
+
+    <ul id="downloads-list" aria-live="polite">
+      <li>Inhalt wird geladen...</li>
+    </ul>
+
+    <p class="fallback">
+      Falls die Liste spinnt(Vorsicht flashbang!): <a href="downloads/">Directory Listing</a>
+    </p>
+
+    <div class="actions">
+      <button id="refresh-downloads" class="refresh-btn" type="button">Liste neu laden</button>
+      <span id="last-check">Noch keine Prüfung ausgeführt.</span>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    © 2026 Lilith Frahm - Alle Rechte vorbehalten | <a href="impressum.html">Impressum</a>
+  </footer>
+
+  <script src="downloads.js" defer></script>
+</body>
+</html>
